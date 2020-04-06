@@ -1,0 +1,30 @@
+.Sidebar > div {
+  background: #fff;
+  padding: 3px;
+}
+
+.Sidebar__Profile {
+  margin-top: 250px;
+  margin-bottom: 10px;
+}
+
+.Sidebar__Profile > img {
+  max-width: 100%;
+}
+
+.Sidebar__Social {
+  text-align: center;
+}
+
+.Sidebar__Social > a {
+  display: inline-block;
+  margin-right: 15px;
+  width: 15%;
+}
+
+.Sidebar__Social > a:last-of-type { margin-right: 0; }
+
+.Sidebar__Social > a > img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

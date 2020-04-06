@@ -1,0 +1,51 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Project {
+  flex: 1 0 auto;
+  height: 250px;
+  width: 250px;
+  margin: 0 10px 10px 0;
+}
+
+.Project,
+.Project--big > .Description {
+  position: relative;
+  background: #fff;
+}
+
+.Video > *,
+.Project > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Project--big {
+  flex: 0 0 calc(100% - 8px);
+  background: none;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: calc(77.5% - 15px)  calc(22.5% - 15px);
+  grid-column-gap: 30px;
+  margin-bottom: 50px;
+}
+
+.Project--big > .Video {
+  position: relative;
+  padding-top: 56.25%;
+  background: lightgrey;
+}
+
+.Project--big > .Description {
+  padding: 10px;
+}
